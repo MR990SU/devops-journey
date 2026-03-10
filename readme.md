@@ -17,3 +17,5 @@ This repository documents my 15-month DevSecOps journey.
 ## DevOps Learning Log
 
 This repository tracks my DevSecOps roadmap progress.
+### Week-1 Progress
+Git basics, staging, branching, remote workflow.
