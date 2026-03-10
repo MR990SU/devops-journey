@@ -1,0 +1,10 @@
+Git is a distributed version control system that tracks changes in source code by storing snapshots of project history. It enables collaboration, branching, rollback, and traceability of infrastructure or application changes.
+
+git remote add origin https://github.com/<username>/devsecops-journey.git   >> add remote repo
+git remote -v  >> check remote repos
+git push -u origin master
+git diff >> check changes to tracked files
+git add >> working dir to stage
+git status
+after git add if we change anything we see the changes using git diff,then we can restore
+git restore
