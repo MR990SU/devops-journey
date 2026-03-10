@@ -1,0 +1,3 @@
+git branch name >> create name branch
+git switch name >> switch existing branch to name branch
+if we change a file in a branch and stage and commit after switch a branch we cant see the changes in another branch if we dont merge it.thats why branch allows devs to develop simaltaniously
