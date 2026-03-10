@@ -14,3 +14,6 @@ This repository documents my 15-month DevSecOps journey.
 - AWS IAM
 - CI/CD Pipelines
 - Kubernetes / OpenShift
+## DevOps Learning Log
+
+This repository tracks my DevSecOps roadmap progress.
