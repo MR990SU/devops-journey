@@ -1,0 +1,8 @@
+| Symbol  | Purpose            |
+| ------- | ------------------ |
+| `[ ]`   | basic condition    |
+| `[[ ]]` | advanced condition |
+| `( )`   | subshell           |
+| `{ }`   | command grouping   |
+| `(( ))` | arithmetic         |
+| `$( )`  | command output     |
