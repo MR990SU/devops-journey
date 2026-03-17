@@ -1,0 +1,5 @@
+================Server Monitoring Script Started===============
+google.com is rechable Tuesday 17 March 2026 07:26:44 PM IST
+github.com is rechable Tuesday 17 March 2026 07:26:44 PM IST
+aws.amazon.com is rechable Tuesday 17 March 2026 07:26:44 PM IST
+Script completed
