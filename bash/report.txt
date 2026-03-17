@@ -1,5 +1,6 @@
-Log-analyzer Started at Tuesday 17 March 2026 09:10:21 PM IST
+Log-analyzer Started at Tuesday 17 March 2026 09:24:56 PM IST
 
-      3  DB connection failed
-      2  Timeout occurred
-      1  Auth failed
+Top 3 ERRORS:
+      3 DB connection failed
+      2 Timeout occurred
+      1 Auth failed

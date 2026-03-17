@@ -9,7 +9,8 @@ then
 	exit 1
 fi
 echo "" >>$report
-echo "$(grep -i "error" $logs | sed s/error//I | sort | uniq -c | sort -nr | head -3 )" >>$report
+echo "Top 3 ERRORS:" >>$report
+grep -i "error" $logs | sed 's/error //I' | sort | uniq -c | sort -nr | head -3 >>$report
 echo "Report generated $report"
 echo "Script Completed at $(date)"
 
