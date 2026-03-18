@@ -6,3 +6,149 @@ Total ERROR : 6
       1 Auth failed
 CRITICAL: Too much error occurs
 Script end at Wednesday 18 March 2026 09:31:39 PM IST
+==================Script started===================
+Run time: Wednesday 18 March 2026 10:52:23 PM IST
+
+[INFO] : INFO DETECTED - INFO Application started
+[INFO] : INFO DETECTED - ERROR DB connection failed
+[INFO] : INFO DETECTED - ERROR Timeout occurred
+[INFO] : INFO DETECTED - ERROR DB connection failed
+[INFO] : INFO DETECTED - WARNING Disk space low
+[INFO] : INFO DETECTED - ERROR Auth failed
+[INFO] : INFO DETECTED - ERROR DB connection failed
+[INFO] : INFO DETECTED - WARNING Memory high
+[INFO] : INFO DETECTED - ERROR Timeout occurred
+[INFO] : INFO DETECTED - INFO Service running
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 10:56:39 PM IST
+Monitoring file: ../logs/dummy.log
+
+[INFO] : INFO Application started
+[INFO] : ERROR DB connection failed
+[INFO] : ERROR Timeout occurred
+[INFO] : ERROR DB connection failed
+[INFO] : WARNING Disk space low
+[INFO] : ERROR Auth failed
+[INFO] : ERROR DB connection failed
+[INFO] : WARNING Memory high
+[INFO] : ERROR Timeout occurred
+[INFO] : INFO Service running
+[INFO] : INFO Service running
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:01:24 PM IST
+Monitoring file: ../logs/dummy.log
+
+[INFO] : ERROR DB connection failed
+[INFO] : ERROR Timeout occurred
+[INFO] : ERROR DB connection failed
+[INFO] : WARNING Disk space low
+[INFO] : ERROR Auth failed
+[INFO] : ERROR DB connection failed
+[INFO] : WARNING Memory high
+[INFO] : ERROR Timeout occurred
+[INFO] : INFO Service running
+[INFO] : INFO Service running
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:06:12 PM IST
+Monitoring file: ../logs/dummy.log
+
+[ALEART] : ERROR DETECTED - ERROR DB connection failed
+[ALEART] : ERROR DETECTED - ERROR Timeout occurred
+[ALEART] : ERROR DETECTED - ERROR DB connection failed
+[INFO] : WARNING Disk space low
+[ALEART] : ERROR DETECTED - ERROR Auth failed
+[ALEART] : ERROR DETECTED - ERROR DB connection failed
+[INFO] : WARNING Memory high
+[ALEART] : ERROR DETECTED - ERROR Timeout occurred
+[INFO] : INFO Service running
+[INFO] : INFO Service running
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:07:50 PM IST
+Monitoring file: ../logs/dummy.log
+
+[ALEART] : ERROR DB connection failed
+[ALEART] : ERROR Timeout occurred
+[ALEART] : ERROR DB connection failed
+[INFO] : WARNING Disk space low
+[ALEART] : ERROR Auth failed
+[ALEART] : ERROR DB connection failed
+[INFO] : WARNING Memory high
+[ALEART] : ERROR Timeout occurred
+[INFO] : INFO Service running
+[INFO] : INFO Service running
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:10:56 PM IST
+Monitoring file: ../logs/dummy.log
+
+[ALEART] : ERROR DB connection failed
+[ALEART] : ERROR Timeout occurred
+[ALEART] : ERROR DB connection failed
+[ALEART] : ERROR Auth failed
+[ALEART] : ERROR DB connection failed
+[ALEART] : ERROR Timeout occurred
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:14:31 PM IST
+Monitoring file: ../logs/dummy.log
+
+[ALEART] : ERROR DB connection failed
+[ALEART] : ERROR Timeout occurred
+[ALEART] : ERROR DB connection failed
+[WARNING] : WARNING Disk space low
+[ALEART] : ERROR Auth failed
+[ALEART] : ERROR DB connection failed
+[WARNING] : WARNING Memory high
+[ALEART] : ERROR Timeout occurred
+[INFO] : INFO Service running
+[INFO] : INFO Service running
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:15:00 PM IST
+Monitoring file: ../logs/dummy.log
+
+[INFO] : 
+[INFO] : INFO Service running
+[WARNING] : WARNING Memory high
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:19:34 PM IST
+Monitoring file: ../logs/dummy.log
+
+[INFO] : 
+
+Script end at Wednesday 18 March 2026 11:19:34 PM IST
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:20:46 PM IST
+Monitoring file: ../logs/dummy.log
+
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:20:54 PM IST
+Monitoring file: ../logs/dummy.log
+
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:21:26 PM IST
+Monitoring file: ../logs/dummy.log
+
+[INFO] : 
+[INFO] : INFO Service running
+[WARNING] : WARNING Memory high
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:21:47 PM IST
+Monitoring file: ../logs/dummy.log
+
+[INFO] : 
+[INFO] : INFO Service running
+[WARNING] : WARNING Memory high
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:24:10 PM IST
+Monitoring file: ../logs/dummy.log
+
+[INFO] : 
+[INFO] : INFO Service running
+[WARNING] : WARNING Memory high
+[INFO] : INFO Service running
+[INFO] : INFO Service running
+[INFO] : INFO Service running
+Real-Time Log Monitor Started
+Run time: Wednesday 18 March 2026 11:32:43 PM IST
+Monitoring file: ../logs/dummy.log
+
+[INFO] : INFO Service running
+[WARNING] : WARNING Memory high
