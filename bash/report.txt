@@ -1,6 +1,8 @@
-Log-analyzer Started at Tuesday 17 March 2026 09:24:56 PM IST
+Script started at Wednesday 18 March 2026 09:31:39 PM IST
 
-Top 3 ERRORS:
+Total ERROR : 6
       3 DB connection failed
       2 Timeout occurred
       1 Auth failed
+CRITICAL: Too much error occurs
+Script end at Wednesday 18 March 2026 09:31:39 PM IST
