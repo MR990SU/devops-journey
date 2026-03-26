@@ -7,14 +7,14 @@ terraform {
   }
 }
 provider "aws" {
-  region = "ap-south-1"
+  region = var.aws_region
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "dev-bucket9919"
+  bucket = var.aws_bucket_name
 
   tags = {
-    Name        = "catagory"
-    Environment = "Devops"
+    Name        = var.tag_key
+    Environment = var.tag_value
   }
 }
