@@ -1,4 +1,4 @@
-output "Security_Grup_id" {
+output "Security_Group_id" {
   description = "This is for sg id"
   value       = aws_security_group.sg.id
 }

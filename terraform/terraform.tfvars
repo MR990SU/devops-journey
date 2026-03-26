@@ -10,3 +10,4 @@ protocol_name="tcp"
 ami_id="ami-0dd3082099c596cdd"
 instance_type="t3.micro"
 key_name="devops-key"
+out_protocol=-1

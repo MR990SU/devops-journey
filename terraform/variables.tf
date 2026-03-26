@@ -24,7 +24,7 @@ variable "cidr_value" {
 }
 variable "port_from_port" {
   type        = number
-  description = "port no for ec2 instance"
+  description = "This is for outbound ip protocol"
 }
 variable "port_to_port" {
   type        = number
@@ -45,4 +45,8 @@ variable "instance_type" {
 variable "key_name" {
   type        = string
   description = "Key pair for ec2 instance"
+}
+variable "out_protocol" {
+  type        = number
+  description = "protocol for ec2 instance"
 }
