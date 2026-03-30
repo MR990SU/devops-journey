@@ -1,16 +1,16 @@
 output "Security_Group_id" {
   description = "This is for sg id"
-  value       = aws_security_group.sg.id
+  value       = aws_security_group.devops_sg.id
 }
 output "Security_Group_name" {
   description = "This is for sg name"
-  value       = aws_security_group.sg.name
+  value       = aws_security_group.devops_sg.name
 }
 output "Ec2_Public_Ip" {
   description = "This is for ec2 public ip"
-  value       = aws_instance.example.public_ip
+  value       = aws_instance.devops_ec2.public_ip
 }
 output "EC2_Instance_Id" {
   description = "This is for ec2 id"
-  value       = aws_instance.example.id
+  value       = aws_instance.devops_ec2.id
 }
