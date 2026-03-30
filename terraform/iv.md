@@ -15,3 +15,17 @@ Without state, Terraform cannot accurately track infrastructure, detect drift, o
 Answer:
 
 Because it may expose infrastructure metadata and sensitive operational details, and it can also create collaboration issues if multiple engineers overwrite it.
+
+"What are Terraform modules?"
+
+Strong answer:
+
+Terraform modules are reusable units of infrastructure code that help organize and standardize resource provisioning. They reduce duplication and make infrastructure easier to manage across environments.
+
+If asked:
+
+"Why use modules?"
+
+Answer:
+
+Modules improve reusability, maintainability, and team collaboration by separating infrastructure into logical components like EC2, networking, or storage.
