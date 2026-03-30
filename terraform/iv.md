@@ -29,3 +29,19 @@ If asked:
 Answer:
 
 Modules improve reusability, maintainability, and team collaboration by separating infrastructure into logical components like EC2, networking, or storage.
+
+
+
+"How do you structure Terraform projects?"
+
+Strong answer:
+
+I prefer separating Terraform into main.tf, variables.tf, outputs.tf, and terraform.tfvars, and for reusable infrastructure I organize code into modules such as EC2 or networking. I also ensure generated files like state are excluded from version control.
+
+If asked:
+
+"How do you make Terraform code production-friendly?"
+
+Answer:
+
+By using variables instead of hardcoded values, organizing code into modules, using clean naming conventions, validating and formatting code, and keeping state files out of Git.
