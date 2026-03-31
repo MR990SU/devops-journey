@@ -12,23 +12,45 @@ Answer:
 
 For initial learning, installing Jenkins directly on a Linux VM helps understand the service lifecycle, dependencies, filesystem layout, and troubleshooting better before containerizing it later.
 
-# Jenkins First Job
+"How does Jenkins integrate with GitHub?"
 
-## What I did
+Strong answer:
 
-- Created a Jenkins freestyle job
-- Ran shell commands inside Jenkins
-- Viewed console output
-- Identified Jenkins workspace
-- Tested both successful and failed builds
+Jenkins integrates with GitHub by pulling source code from a repository into its workspace and then executing build, test, or deployment steps defined in the job or pipeline configuration.
 
-## Important Concepts
+If asked:
 
-- Jenkins job
-- Build step
-- Console output
-- Workspace
+"Does Jenkins run directly from your local machine repo?"
 
-## Workspace Path
+Answer:
 
-/var/lib/jenkins/workspace/first-build-job
+No. Jenkins clones the repository into its own workspace and executes the job there, which ensures isolated and repeatable CI execution.
+
+If asked:
+
+"How do you debug a Jenkins GitHub job failure?"
+
+Answer:
+
+I first check the console output, verify whether the repository was cloned correctly, inspect the Jenkins workspace, and then identify whether the failure is due to script issues, permissions, or environment problems.
+"What is a Jenkins job?"
+
+Strong answer:
+
+A Jenkins job is an automation unit that executes defined tasks such as shell commands, builds, tests, or deployments. It is the basic execution unit of Jenkins CI pipelines.
+
+If asked:
+
+"What is Jenkins workspace?"
+
+Answer:
+
+Jenkins workspace is the directory where a job runs. It stores checked-out code, temporary build files, and generated artifacts during job execution.
+
+If asked:
+
+"How do you debug a failed Jenkins build?"
+
+Answer:
+
+I first check the console output to identify the failing command, verify the workspace contents, and then fix the build step or environment issue causing the failure.
