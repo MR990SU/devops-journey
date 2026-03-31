@@ -54,3 +54,25 @@ If asked:
 Answer:
 
 I first check the console output to identify the failing command, verify the workspace contents, and then fix the build step or environment issue causing the failure.
+
+"What are Jenkins environment variables?"
+
+Strong answer:
+
+Jenkins environment variables are built-in dynamic values available during builds, such as job name, build number, workspace path, and node name, which help make CI jobs more flexible and reusable.
+
+If asked:
+
+"What is a Jenkins artifact?"
+
+Answer:
+
+A Jenkins artifact is an important output produced by a build, such as a report, binary, or package, which is archived and preserved after the build completes.
+
+If asked:
+
+"What is the difference between workspace and artifact?"
+
+Answer:
+
+Workspace is the directory where Jenkins executes the build, while an artifact is a selected output intentionally saved after the build for later access or use.

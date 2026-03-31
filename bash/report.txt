@@ -1,15 +1,8 @@
-==============Script Started==============
-Run Time: Sunday 22 March 2026 08:37:55 AM IST
-Log used: /root/devops-journey/bash/../logs/dummy.log
-Report generated: /root/devops-journey/bash/report.txt
-Total Log Summary
-Total Error Count: 6
-Total Warning Count: 2
-Total Info Count: 2
-Total error: 6
-Top Errors:
+Script started at Tuesday 31 March 2026 09:38:46 PM IST
 
+Total ERROR : 6
       3 DB connection failed
       2 Timeout occurred
       1 Auth failed
-CRITICAL: High error rate detected
+CRITICAL: Too much error occurs
+Script end at Tuesday 31 March 2026 09:38:46 PM IST
