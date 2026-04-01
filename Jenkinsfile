@@ -11,8 +11,8 @@ pipeline {
         stage('Repository Validation') {
             steps {
                 echo "Running Repository Validation"
-                sh 'chmod +x ./cicd/scripts/ci-validation.sh'
-                sh './cicd/scripts/ci-validation.sh'
+                sh 'chmod +x ./cicd/scripts/ci-validate.sh'
+                sh './cicd/scripts/ci-validate.sh'
             }
         }
         stage('Archive Build Report') {
