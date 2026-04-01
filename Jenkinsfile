@@ -26,7 +26,7 @@ pipeline {
         success {
             echo "Pipeline executed successfully."
         }
-        faliure {
+        failure {
             echo "Pipeline failed. check logs."
         }
         always{
