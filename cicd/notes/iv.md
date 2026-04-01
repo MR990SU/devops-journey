@@ -76,3 +76,25 @@ If asked:
 Answer:
 
 Workspace is the directory where Jenkins executes the build, while an artifact is a selected output intentionally saved after the build for later access or use.
+
+"What is a Jenkins pipeline?"
+
+Strong answer:
+
+A Jenkins pipeline is a code-defined automation workflow made up of stages and steps, used to structure CI/CD processes such as build, test, and deployment.
+
+If asked:
+
+"Why are pipelines better than freestyle jobs?"
+
+Answer:
+
+Pipelines are more scalable, reusable, and maintainable because they are defined as code, can be version-controlled, and provide better structure than freestyle jobs.
+
+If asked:
+
+"What happens if a stage fails?"
+
+Answer:
+
+If a stage fails, Jenkins stops the pipeline by default and marks the build as failed, which helps quickly identify broken steps in CI workflows.
