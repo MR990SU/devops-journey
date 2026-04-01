@@ -1,0 +1,51 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                echo "Cloning Source code from github"
+                checkout scm
+            }
+        }
+        stage('Build') {
+            steps {
+                echo "Executing Build Stage"
+                sh 'chmod +x ./cicd/scripts/build.sh'
+                sh './cicd/scripts/build.sh'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Executing test Stage"
+                sh 'chmod +x ./cicd/scripts/test.sh'
+                sh './cicd/scripts/test.sh'
+            }
+        }
+        stage('Package') {
+            steps {
+                echo "Executing Package Stage"
+                sh 'chmod +x ./cicd/scripts/package.sh'
+                sh './cicd/scripts/package.sh'
+            }
+        }
+        stage('Report') {
+            steps {
+                echo "Archiving Build Report"
+                archiveArtifacts artifacts: 'reports/*, build/*, package/*', fingerprint:true
+            }
+        }
+    }
+    post {
+        success {
+            echo "Pipeline executed successfully."
+        }
+        failure {
+            echo "Pipeline failed. check logs."
+        }
+        always{
+            echo "Pipeline execution finished."
+        }
+    }
+}
+

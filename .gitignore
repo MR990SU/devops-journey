@@ -35,3 +35,6 @@ file.txt
 *.tfstate.backup
 .terraform/
 .terraform.lock.hcl
+build/
+reports/*.txt
+package/

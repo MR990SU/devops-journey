@@ -98,3 +98,4 @@ If asked:
 Answer:
 
 If a stage fails, Jenkins stops the pipeline by default and marks the build as failed, which helps quickly identify broken steps in CI workflows.
+“I moved Jenkins pipelines from UI-based configuration to Jenkinsfile-based pipeline-as-code stored in GitHub. This improves version control, reproducibility, team collaboration, and makes CI pipelines production-style.”
