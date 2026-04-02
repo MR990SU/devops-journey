@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        type (name: 'ENVIRONMENT', choices: ['dev', 'stagging', 'prod'], description: 'Select target environment')
+        choice (name: 'ENVIRONMENT', choices: ['dev', 'stagging', 'prod'], description: 'Select target environment')
         booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Run test stage?')
         string(name: 'PACKAGE_VERSION', defaultValue: 'v1.0.0', description: 'Package version label')
     }
