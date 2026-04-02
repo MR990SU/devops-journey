@@ -7,6 +7,6 @@ echo "===================================="
 
 mkdir -p package
 
-tar -czf package/devops-journey-package.tar.gz build reports
+tar -czf package/devops-journey-${PACKAGE_VERSION}.tar.gz build reports
 
 echo "Packaging completed successfully."

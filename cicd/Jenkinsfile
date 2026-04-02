@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    parameters {
+        type (name: 'ENVIRONMENT', choices: ['dev', 'stagging', 'prod'], description: 'Select target environment')
+        booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Run test stage?')
+        string(name: 'PACKAGE_VERSION', defaultValue: 'v1.0.0', description: 'Package version label')
+    }
 
     stages {
         stage('Checkout Code') {
@@ -10,21 +15,24 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo "Executing Build Stage"
+                echo "Executing Build Stage for environment: $ENVIRONMENT"
                 sh 'chmod +x ./cicd/scripts/build.sh'
                 sh './cicd/scripts/build.sh'
             }
         }
         stage('Test') {
+            when {
+                expression { params.RUN_TESTS==true }
+            }
             steps {
-                echo "Executing test Stage"
+                echo "Executing test Stage for environment: $ENVIRONMENT"
                 sh 'chmod +x ./cicd/scripts/test.sh'
                 sh './cicd/scripts/test.sh'
             }
         }
         stage('Package') {
             steps {
-                echo "Executing Package Stage"
+                echo "Packaging version: $PACKAGE_VERSION"
                 sh 'chmod +x ./cicd/scripts/package.sh'
                 sh './cicd/scripts/package.sh'
             }

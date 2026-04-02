@@ -8,10 +8,11 @@ echo "===================================="
 mkdir -p reports
 
 if [ -f build/build-output.txt ]; then
-    echo "Build output found. Running validation tests..."
-    echo "Test executed at: $(date)" > reports/test-report.txt
+    echo "Running validation tests for environment: ${ENVIRONMENT}"
+    echo "Test executed for environment: ${ENVIRONMENT}" > reports/test-report.txt
+    echo "Package version under test: ${PACKAGE_VERSION}" >> reports/test-report.txt
     echo "Build artifact validation passed." >> reports/test-report.txt
-    echo "Repository CI checks passed." >> reports/test-report.txt
+    echo "Test stage completed successfully." >> reports/test-report.txt
     echo "Test stage completed successfully."
 else
     echo "ERROR: build/build-output.txt not found!"

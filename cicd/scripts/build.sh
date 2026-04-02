@@ -7,8 +7,9 @@ echo "===================================="
 
 mkdir -p build
 
-echo "Application build simulation started at: $(date)" > build/build-output.txt
-echo "Source prepared successfully." >> build/build-output.txt
-echo "Build stage completed." >> build/build-output.txt
+echo "Build started for environment: ${ENVIRONMENT}" > build/build-output.txt
+echo "Package version: ${PACKAGE_VERSION}" >> build/build-output.txt
+echo "Build simulation executed at: $(date)" >> build/build-output.txt
+echo "Build stage completed successfully." >> build/build-output.txt
 
 echo "Build completed successfully."
