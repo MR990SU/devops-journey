@@ -5,12 +5,28 @@ pipeline {
         booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Run test stage?')
         string(name: 'PACKAGE_VERSION', defaultValue: 'v1.0.0', description: 'Package version label')
     }
+    environment {
+        BUILD_TIMESTAMP = "$(newdate().format('yyy-MM-dd HH-mm-ss'))"
+    }
 
     stages {
         stage('Checkout Code') {
             steps {
                 echo "Cloning Source code from github"
                 checkout scm
+            }
+        }
+        stage('Print Build Info') {
+            steps {
+                echo "Job Name: $(env.JOB_NAME)"
+                echo "Build Number: $(env.BUILD_NUMBER)"
+                echo "node: $(env.NODE)"
+                echo "Workspace      : ${env.WORKSPACE}"
+                echo "Environment    : ${params.ENVIRONMENT}"
+                echo "Run Tests      : ${params.RUN_TESTS}"
+                echo "Version        : ${params.PACKAGE_VERSION}"
+                echo "Timestamp      : ${env.BUILD_TIMESTAMP}"
+                echo "================================"
             }
         }
         stage('Build') {
@@ -35,6 +51,13 @@ pipeline {
                 echo "Packaging version: $PACKAGE_VERSION"
                 sh 'chmod +x ./cicd/scripts/package.sh'
                 sh './cicd/scripts/package.sh'
+            }
+        }
+        stage('Metadata') {
+            steps {
+                echo "Drafting Metadata"
+                sh 'chmod +x ./cicd/scripts/metadata.sh'
+                sh './cicd/scripts/metadata.sh'
             }
         }
         stage('Report') {

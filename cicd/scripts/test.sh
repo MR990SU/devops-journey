@@ -2,19 +2,23 @@
 set -e
 
 echo "===================================="
-echo " TEST STAGE STARTED "
+echo " [TEST STAGE] "
 echo "===================================="
+
+echo "Environment: ${ENVIRONMENT}"
 
 mkdir -p reports
 
 if [ -f build/build-output.txt ]; then
-    echo "Running validation tests for environment: ${ENVIRONMENT}"
-    echo "Test executed for environment: ${ENVIRONMENT}" > reports/test-report.txt
-    echo "Package version under test: ${PACKAGE_VERSION}" >> reports/test-report.txt
-    echo "Build artifact validation passed." >> reports/test-report.txt
-    echo "Test stage completed successfully." >> reports/test-report.txt
-    echo "Test stage completed successfully."
+    echo "[TEST] Running validation checks..."
+
+    echo "Test executed at: $(date)" > reports/test-report.txt
+    echo "Environment: ${ENVIRONMENT}" >> reports/test-report.txt
+    echo "Version: ${PACKAGE_VERSION}" >> reports/test-report.txt
+    echo "Status: PASS" >> reports/test-report.txt
+
+    echo "[TEST] Completed successfully."
 else
-    echo "ERROR: build/build-output.txt not found!"
+    echo "[ERROR] Build artifact missing!"
     exit 1
 fi

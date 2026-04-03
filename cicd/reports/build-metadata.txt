@@ -1,0 +1,8 @@
+Build Number: 1
+Job Name: local-test
+Workspace: /root/devops-journey/cicd
+Node Name: local-node
+Environment: dev
+Run Tests: true
+Package Version: v2.0.0
+Triggered At: Friday 03 April 2026 08:22:37 PM IST

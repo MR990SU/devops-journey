@@ -2,14 +2,16 @@
 set -e
 
 echo "===================================="
-echo " BUILD STAGE STARTED "
+echo " [BUILD STAGE] "
 echo "===================================="
+
+echo "Environment: ${ENVIRONMENT}"
+echo "Version: ${PACKAGE_VERSION}"
 
 mkdir -p build
 
-echo "Build started for environment: ${ENVIRONMENT}" > build/build-output.txt
-echo "Package version: ${PACKAGE_VERSION}" >> build/build-output.txt
-echo "Build simulation executed at: $(date)" >> build/build-output.txt
-echo "Build stage completed successfully." >> build/build-output.txt
+echo "Build started at: $(date)" > build/build-output.txt
+echo "Environment: ${ENVIRONMENT}" >> build/build-output.txt
+echo "Version: ${PACKAGE_VERSION}" >> build/build-output.txt
 
-echo "Build completed successfully."
+echo "[BUILD] Completed successfully."
