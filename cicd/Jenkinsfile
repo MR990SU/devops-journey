@@ -6,7 +6,7 @@ pipeline {
         string(name: 'PACKAGE_VERSION', defaultValue: 'v1.0.0', description: 'Package version label')
     }
     environment {
-        BUILD_TIMESTAMP = "$(newdate().format('yyy-MM-dd HH-mm-ss'))"
+        BUILD_TIMESTAMP = "${new date().format('yyy-MM-dd HH-mm-ss')}"
     }
 
     stages {
