@@ -6,7 +6,7 @@ pipeline {
         string(name: 'PACKAGE_VERSION', defaultValue: 'v1.0.0', description: 'Package version label')
     }
     environment {
-        BUILD_TIMESTAMP = "${new date().format('yyy-MM-dd HH-mm-ss')}"
+        BUILD_TIMESTAMP = "${new Date().format('yyy-MM-dd HH-mm-ss')}"
     }
 
     stages {
@@ -18,9 +18,9 @@ pipeline {
         }
         stage('Print Build Info') {
             steps {
-                echo "Job Name: $(env.JOB_NAME)"
-                echo "Build Number: $(env.BUILD_NUMBER)"
-                echo "node: $(env.NODE)"
+                echo "Job Name: ${env.JOB_NAME}"
+                echo "Build Number: ${env.BUILD_NUMBER}"
+                echo "node: ${env.NODE}"
                 echo "Workspace      : ${env.WORKSPACE}"
                 echo "Environment    : ${params.ENVIRONMENT}"
                 echo "Run Tests      : ${params.RUN_TESTS}"
@@ -79,4 +79,3 @@ pipeline {
         }
     }
 }
-
